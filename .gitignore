@@ -19,3 +19,5 @@ testem.log
 
 # JetBrains
 .idea/*
+
+.idea/workspace.xml
