@@ -1,5 +1,4 @@
-import Ember from 'ember';
+import EmberArrayController from '../array-index';
 
-export default Ember.ArrayController.extend({
-
+export default EmberArrayController.extend({
 });

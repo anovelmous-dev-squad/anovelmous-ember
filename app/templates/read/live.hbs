@@ -1,13 +1,19 @@
-{{#each}}
+{{#each indexedModel}}
     <p>
-        {{text}}
+        {{#each model.splitWords}}
+            <span class="split-word">{{this}}</span>
+        {{/each}}
+        {{#if last}}
+            <!--TODO remove the style tag-->
+            <input id="vote" type="text" name="vote" class="split-new-word-input" style="display: inline-block;"/>
+        {{/if}}
     </p>
 {{/each}}
-<div class="large-10 medium-10 small-8 columns">
-    <div class="row">
-        <form id="vote-form" method="post">
-            <label for="vote">Vote: </label>
-            <input id="vote" type="text" name="vote">
-        </form>
-    </div>
-</div>
+<!--<div class="large-10 medium-10 small-8 columns">-->
+    <!--<div class="row">-->
+        <!--<form id="vote-form" method="post">-->
+            <!--<label for="vote">Vote: </label>-->
+            <!--<input id="vote" type="text" name="vote">-->
+        <!--</form>-->
+    <!--</div>-->
+<!--</div>-->

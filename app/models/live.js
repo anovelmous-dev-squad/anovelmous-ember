@@ -1,7 +1,16 @@
 import DS from 'ember-data';
 
 var LiveModel = DS.Model.extend({
-    text: DS.attr('string')
+    text: DS.attr('string'),
+
+    /**
+     * splits all of the words in text by whitespace.
+     *
+     * @property splitWords
+     */
+    splitWords: function(){
+        return this.get('text').split(/\s+/);
+    }.property('text')
 });
 
 LiveModel.reopenClass({
