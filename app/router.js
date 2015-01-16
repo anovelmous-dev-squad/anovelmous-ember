@@ -1,15 +1,17 @@
 import Ember from 'ember';
-import config from './config/environment';
+import config from '../config/environment';
 
 var Router = Ember.Router.extend({
   location: config.locationType
 });
 
 Router.map(function() {
-  this.route('read');
-  this.route('read/live');
-  this.route('chapter');
-  this.route('sidebar');
+    this.resource('read', function() {
+        this.route('live');
+        this.route('chapter');
+    });
+    this.resource('about', {'path': '/about'});
+    this.resource('sidebar', {'path': '/sidebar'});
 });
 
 export default Router;
