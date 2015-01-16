@@ -6,6 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('read');
+  this.route('read/live');
+  this.route('chapter');
+  this.route('sidebar');
 });
 
 export default Router;
