@@ -1,3 +1,26 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<div class="large-12 medium-12 small-12 columns">
+    <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="tab-bar">
+                <section class="left-small">
+                    <a href="#" class="left-off-canvas-toggle menu-icon">
+                        <span></span>
+                    </a>
+                </section>
+                <section class="middle tab-bar-section">
+                    <h1 class="title">Anovelmous</h1>
+                </section>
+            </nav>
 
-{{outlet}}
+            <aside class="left-off-canvas-menu">
+                {{partial "sidebar"}}
+            </aside>
+
+            <section class="main-section">
+                {{outlet}}
+            </section>
+
+            <a class="exit-off-canvas"></a>
+        </div>
+    </div>
+</div>
