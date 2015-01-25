@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#navbar-options">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+      </button>
+      {{#link-to 'application' class="navbar-brand"}}
+          Anovelmous
+      {{/link-to}}
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-options">
+      <ul class="nav navbar-nav">
+        {{#link-to 'archive' tagName='li'}}
+          <a {{bind-attr href='view.href'}}>
+              Archive
+          </a>
+        {{/link-to}}
+      </ul>
+    </div>
+  </div>
+</nav>

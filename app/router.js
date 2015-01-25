@@ -12,6 +12,9 @@ Router.map(function() {
     });
     this.resource('about', {'path': '/about'});
     this.resource('sidebar', {'path': '/sidebar'});
+    this.resource('archive', { path: '/archive' }, function(){
+
+    });
 });
 
 export default Router;
