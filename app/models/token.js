@@ -7,304 +7,504 @@ var TokenModel = DS.Model.extend({
 TokenModel.reopen({
   FIXTURES: [
     {
-      "content": "feof"
+      "id": 1,
+      "content": "feof",
+      "is_punctuation": false
     },
     {
-      "content": "til"
+      "id": 2,
+      "content": "til",
+      "is_punctuation": false
     },
     {
-      "content": "environmental"
+      "id": 3,
+      "content": "environmental",
+      "is_punctuation": false
     },
     {
-      "content": "bathrooms"
+      "id": 4,
+      "content": "bathrooms",
+      "is_punctuation": false
     },
     {
-      "content": "makers"
+      "id": 5,
+      "content": "makers",
+      "is_punctuation": false
     },
     {
-      "content": "sociology"
+      "id": 6,
+      "content": "sociology",
+      "is_punctuation": false
     },
     {
-      "content": "atmosphere"
+      "id": 7,
+      "content": "atmosphere",
+      "is_punctuation": false
     },
     {
-      "content": "keys"
+      "id": 8,
+      "content": "keys",
+      "is_punctuation": false
     },
     {
-      "content": "sewing"
+      "id": 9,
+      "content": "sewing",
+      "is_punctuation": false
     },
     {
-      "content": "statute"
+      "id": 10,
+      "content": "statute",
+      "is_punctuation": false
     },
     {
-      "content": "comparisons"
+      "id": 11,
+      "content": "comparisons",
+      "is_punctuation": false
     },
     {
-      "content": "relying"
+      "id": 12,
+      "content": "relying",
+      "is_punctuation": false
     },
     {
-      "content": "difficulties"
+      "id": 13,
+      "content": "difficulties",
+      "is_punctuation": false
     },
     {
-      "content": "trembl"
+      "id": 14,
+      "content": "trembl",
+      "is_punctuation": false
     },
     {
-      "content": "gs"
+      "id": 15,
+      "content": "gs",
+      "is_punctuation": false
     },
     {
-      "content": "choose"
+      "id": 16,
+      "content": "choose",
+      "is_punctuation": false
     },
     {
-      "content": "touched"
+      "id": 17,
+      "content": "touched",
+      "is_punctuation": false
     },
     {
-      "content": "rip"
+      "id": 18,
+      "content": "rip",
+      "is_punctuation": false
     },
     {
-      "content": "baseline"
+      "id": 19,
+      "content": "baseline",
+      "is_punctuation": false
     },
     {
-      "content": "began"
+      "id": 20,
+      "content": "began",
+      "is_punctuation": false
     },
     {
-      "content": "but"
+      "id": 21,
+      "content": "but",
+      "is_punctuation": false
     },
     {
-      "content": "accompanied"
+      "id": 22,
+      "content": "accompanied",
+      "is_punctuation": false
     },
     {
-      "content": "subjective"
+      "id": 23,
+      "content": "subjective",
+      "is_punctuation": false
     },
     {
-      "content": "karen"
+      "id": 24,
+      "content": "karen",
+      "is_punctuation": false
     },
     {
-      "content": "join"
+      "id": 25,
+      "content": "join",
+      "is_punctuation": false
     },
     {
-      "content": "jungle"
+      "id": 26,
+      "content": "jungle",
+      "is_punctuation": false
     },
     {
-      "content": "clone"
+      "id": 27,
+      "content": "clone",
+      "is_punctuation": false
     },
     {
-      "content": "jvc"
+      "id": 28,
+      "content": "jvc",
+      "is_punctuation": false
     },
     {
-      "content": "allocation"
+      "id": 29,
+      "content": "allocation",
+      "is_punctuation": false
     },
     {
-      "content": "console"
+      "id": 30,
+      "content": "console",
+      "is_punctuation": false
     },
     {
-      "content": "rapidly"
+      "id": 31,
+      "content": "rapidly",
+      "is_punctuation": false
     },
     {
-      "content": "airlines"
+      "id": 32,
+      "content": "airlines",
+      "is_punctuation": false
     },
     {
-      "content": "penny"
+      "id": 33,
+      "content": "penny",
+      "is_punctuation": false
     },
     {
-      "content": "dominant"
+      "id": 34,
+      "content": "dominant",
+      "is_punctuation": false
     },
     {
-      "content": "integer"
+      "id": 35,
+      "content": "integer",
+      "is_punctuation": false
     },
     {
-      "content": "writing"
+      "id": 36,
+      "content": "writing",
+      "is_punctuation": false
     },
     {
-      "content": "purchasing"
+      "id": 37,
+      "content": "purchasing",
+      "is_punctuation": false
     },
     {
-      "content": "gotten"
+      "id": 38,
+      "content": "gotten",
+      "is_punctuation": false
     },
     {
-      "content": "gtk"
+      "id": 39,
+      "content": "gtk",
+      "is_punctuation": false
     },
     {
-      "content": "upc"
+      "id": 40,
+      "content": "upc",
+      "is_punctuation": false
     },
     {
-      "content": "eq"
+      "id": 41,
+      "content": "eq",
+      "is_punctuation": false
     },
     {
-      "content": "cooking"
+      "id": 42,
+      "content": "cooking",
+      "is_punctuation": false
     },
     {
-      "content": "tone"
+      "id": 43,
+      "content": "tone",
+      "is_punctuation": false
     },
     {
-      "content": "fy"
+      "id": 44,
+      "content": "fy",
+      "is_punctuation": false
     },
     {
-      "content": "devon"
+      "id": 45,
+      "content": "devon",
+      "is_punctuation": false
     },
     {
-      "content": "phi"
+      "id": 46,
+      "content": "phi",
+      "is_punctuation": false
     },
     {
-      "content": "hello"
+      "id": 47,
+      "content": "hello",
+      "is_punctuation": false
     },
     {
-      "content": "tight"
+      "id": 48,
+      "content": "tight",
+      "is_punctuation": false
     },
     {
-      "content": "stay"
+      "id": 49,
+      "content": "stay",
+      "is_punctuation": false
     },
     {
-      "content": "closes"
+      "id": 50,
+      "content": "closes",
+      "is_punctuation": false
     },
     {
-      "content": "circus"
+      "id": 51,
+      "content": "circus",
+      "is_punctuation": false
     },
     {
-      "content": "priest"
+      "id": 52,
+      "content": "priest",
+      "is_punctuation": false
     },
     {
-      "content": "administrative"
+      "id": 53,
+      "content": "administrative",
+      "is_punctuation": false
     },
     {
-      "content": "debian"
+      "id": 54,
+      "content": "debian",
+      "is_punctuation": false
     },
     {
-      "content": "congressional"
+      "id": 55,
+      "content": "congressional",
+      "is_punctuation": false
     },
     {
-      "content": "cabinet"
+      "id": 56,
+      "content": "cabinet",
+      "is_punctuation": false
     },
     {
-      "content": "friends"
+      "id": 57,
+      "content": "friends",
+      "is_punctuation": false
     },
     {
-      "content": "authority"
+      "id": 58,
+      "content": "authority",
+      "is_punctuation": false
     },
     {
-      "content": "luxembourg"
+      "id": 59,
+      "content": "luxembourg",
+      "is_punctuation": false
     },
     {
-      "content": "modeling"
+      "id": 60,
+      "content": "modeling",
+      "is_punctuation": false
     },
     {
-      "content": "infants"
+      "id": 61,
+      "content": "infants",
+      "is_punctuation": false
     },
     {
-      "content": "royal"
+      "id": 62,
+      "content": "royal",
+      "is_punctuation": false
     },
     {
-      "content": "awareness"
+      "id": 63,
+      "content": "awareness",
+      "is_punctuation": false
     },
     {
-      "content": "store"
+      "id": 64,
+      "content": "store",
+      "is_punctuation": false
     },
     {
-      "content": "broadcasting"
+      "id": 65,
+      "content": "broadcasting",
+      "is_punctuation": false
     },
     {
-      "content": "geographical"
+      "id": 66,
+      "content": "geographical",
+      "is_punctuation": false
     },
     {
-      "content": "application"
+      "id": 67,
+      "content": "application",
+      "is_punctuation": false
     },
     {
-      "content": "transferred"
+      "id": 68,
+      "content": "transferred",
+      "is_punctuation": false
     },
     {
-      "content": "territory"
+      "id": 69,
+      "content": "territory",
+      "is_punctuation": false
     },
     {
-      "content": "touch"
+      "id": 70,
+      "content": "touch",
+      "is_punctuation": false
     },
     {
-      "content": "posing"
+      "id": 71,
+      "content": "posing",
+      "is_punctuation": false
     },
     {
-      "content": "tomato"
+      "id": 72,
+      "content": "tomato",
+      "is_punctuation": false
     },
     {
-      "content": "bargains"
+      "id": 73,
+      "content": "bargains",
+      "is_punctuation": false
     },
     {
-      "content": "commons"
+      "id": 74,
+      "content": "commons",
+      "is_punctuation": false
     },
     {
-      "content": "responsibility"
+      "id": 75,
+      "content": "responsibility",
+      "is_punctuation": false
     },
     {
-      "content": "ave"
+      "id": 76,
+      "content": "ave",
+      "is_punctuation": false
     },
     {
-      "content": "ali"
+      "id": 77,
+      "content": "ali",
+      "is_punctuation": false
     },
     {
-      "content": "crafts"
+      "id": 78,
+      "content": "crafts",
+      "is_punctuation": false
     },
     {
-      "content": "essential"
+      "id": 79,
+      "content": "essential",
+      "is_punctuation": false
     },
     {
-      "content": "rebecca"
+      "id": 80,
+      "content": "rebecca",
+      "is_punctuation": false
     },
     {
-      "content": "attached"
+      "id": 81,
+      "content": "attached",
+      "is_punctuation": false
     },
     {
-      "content": "dale"
+      "id": 82,
+      "content": "dale",
+      "is_punctuation": false
     },
     {
-      "content": "become"
+      "id": 83,
+      "content": "become",
+      "is_punctuation": false
     },
     {
-      "content": "tribes"
+      "id": 84,
+      "content": "tribes",
+      "is_punctuation": false
     },
     {
-      "content": "bell"
+      "id": 85,
+      "content": "bell",
+      "is_punctuation": false
     },
     {
-      "content": "unified"
+      "id": 86,
+      "content": "unified",
+      "is_punctuation": false
     },
     {
-      "content": "shame"
+      "id": 87,
+      "content": "shame",
+      "is_punctuation": false
     },
     {
-      "content": "ethnic"
+      "id": 88,
+      "content": "ethnic",
+      "is_punctuation": false
     },
     {
-      "content": "vertical"
+      "id": 89,
+      "content": "vertical",
+      "is_punctuation": false
     },
     {
-      "content": "ie"
+      "id": 90,
+      "content": "ie",
+      "is_punctuation": false
     },
     {
-      "content": "better"
+      "id": 91,
+      "content": "better",
+      "is_punctuation": false
     },
     {
-      "content": "somewhat"
+      "id": 92,
+      "content": "somewhat",
+      "is_punctuation": false
     },
     {
-      "content": "replica"
+      "id": 93,
+      "content": "replica",
+      "is_punctuation": false
     },
     {
-      "content": "wings"
+      "id": 94,
+      "content": "wings",
+      "is_punctuation": false
     },
     {
-      "content": "plant"
+      "id": 95,
+      "content": "plant",
+      "is_punctuation": false
     },
     {
-      "content": "gem"
+      "id": 96,
+      "content": "gem",
+      "is_punctuation": false
     },
     {
-      "content": "macromedia"
+      "id": 97,
+      "content": "macromedia",
+      "is_punctuation": false
     },
     {
-      "content": "vacancies"
+      "id": 98,
+      "content": "vacancies",
+      "is_punctuation": false
     },
     {
-      "content": "input"
+      "id": 99,
+      "content": "input",
+      "is_punctuation": false
     },
     {
-      "content": "quiet"
+      "id": 100,
+      "content": "quiet",
+      "is_punctuation": false
     }
   ]
 });
