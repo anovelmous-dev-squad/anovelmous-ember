@@ -8,9 +8,11 @@ var NovelModel = DS.Model.extend({
 NovelModel.reopen({
   FIXTURES: [
     {
-      id: 0,
+      id: 5014,
       title: 'My First Novel',
-      chapters: []
+      chapters: [
+          5015
+      ]
     },
     {
       id: 1,

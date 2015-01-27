@@ -1,6 +1,18 @@
 import DS from 'ember-data';
 
-export default DS.Model.extend({
+var ChapterModel = DS.Model.extend({
   title: DS.attr('string'),
   novel: DS.belongsTo('novel')
 });
+
+ChapterModel.reopen({
+    FIXTURES: [
+        {
+            "id": 5015,
+            "title": "Chapter One",
+            "novel": 5014
+        }
+    ]
+});
+
+export default ChapterModel;
