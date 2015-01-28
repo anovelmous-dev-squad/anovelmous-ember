@@ -2,10 +2,12 @@ import DS from 'ember-data';
 
 var NovelModel = DS.Model.extend({
   title: DS.attr('string'),
-  chapters: DS.hasMany('chapter')
+  chapters: DS.hasMany('chapter', {
+    async: true
+  })
 });
 
-NovelModel.reopen({
+NovelModel.reopenClass({
   FIXTURES: [
     {
       id: 5014,

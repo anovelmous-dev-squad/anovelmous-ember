@@ -7,7 +7,7 @@ var UserModel = DS.Model.extend({
   groups: DS.hasMany('group')
 });
 
-UserModel.reopen({
+UserModel.reopenClass({
   FIXTURES: [
     {
       id: 0,

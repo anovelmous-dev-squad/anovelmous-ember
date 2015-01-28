@@ -13,6 +13,19 @@
 
     <div class="collapse navbar-collapse" id="navbar-options">
       <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <a>
+              {{view "select"
+                value=selectedNovel
+                contentBinding="novels"
+                prompt="Novels"
+                optionLabelPath="content.title"
+                optionValuePath="content"
+                class="navbar-dropdown"}}
+            </a>
+
+        </li>
+
         {{#link-to 'archive' tagName='li'}}
           <a {{bind-attr href='view.href'}}>
               Archive

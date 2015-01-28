@@ -5,7 +5,7 @@ var ChapterModel = DS.Model.extend({
   novel: DS.belongsTo('novel')
 });
 
-ChapterModel.reopen({
+ChapterModel.reopenClass({
     FIXTURES: [
         {
             "id": 5015,

@@ -4,7 +4,7 @@ var TokenModel = DS.Model.extend({
   content: DS.attr('string')
 });
 
-TokenModel.reopen({
+TokenModel.reopenClass({
   FIXTURES: [
     {
       "id": 1,

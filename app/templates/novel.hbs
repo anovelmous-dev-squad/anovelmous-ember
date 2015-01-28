@@ -1,0 +1,9 @@
+{{view "select"
+  value=selectedChapter
+  contentBinding="chapters"
+  prompt="Chapters"
+  optionLabelPath="content.title"
+  optionValuePath="content.id"
+  class="navbar-dropdown"}}
+
+{{outlet}}

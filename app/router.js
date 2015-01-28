@@ -6,15 +6,18 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-    this.resource('read', { path: '/' }, function() {
-        this.route('live', { path: '/' });
-        this.route('chapter');
-    });
-    this.resource('about', {'path': '/about'});
-    this.resource('sidebar', {'path': '/sidebar'});
-    this.resource('archive', { path: '/archive' }, function(){
+  this.resource('read', { path: '/' }, function() {
+      this.route('live', { path: '/' });
+      this.route('chapter');
+  });
+  this.resource('novel', { path: '/novel/:novelId'}, function() {
+    this.resource('chapter', { path: '/chapter/:chapterId'});
+  });
+  this.resource('about', {'path': '/about'});
+  this.resource('sidebar', {'path': '/sidebar'});
+  this.resource('archive', { path: '/archive' }, function(){
 
-    });
+  });
 });
 
 export default Router;
