@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.View.extend({
-  tagName: 'input',
-  attributeBindings: ['value'],
+  tagName: 'div',
+  templateName: 'views/live-input',
+  attributeBindings: ['value', 'placeholder'],
   classNames: ['live-input'],
   classNameBindings: ['error', 'voted', 'success', 'failure', 'nothing'],
   error: false,
@@ -21,6 +22,9 @@ export default Ember.View.extend({
       else{
         // TODO
       }
+    }
+    else {
+      // TODO get valid words
     }
   },
   submitVote: function(){

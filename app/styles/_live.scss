@@ -2,23 +2,85 @@
 
 .live-input {
   max-width: 10em;
-  border-color: $brand-info;
+  display: inline-block;
+  position: relative;
 }
 
-.live-input .error {
-  border-color: $brand-danger;
+.live-input input {
+  border: none;
+  margin-bottom: 3px;
 }
 
-.live-input .voted {
-  border-color: $brand-primary;
+.live-input input:focus {
+  outline: none;
 }
 
-.live-input .success {
-  border-color: $brand-success;
-
+.live-input:after {
+  //-webkit-animation: pulse 1s ease infinite;
+  content: " ";
+  position: absolute;
+  z-index: 999;
+  height: 5px;
+  border-bottom: solid;
+  left: 0;
+  bottom: 0;
+  -webkit-animation: pulse 2s linear infinite;
 }
 
-.live-input .failure {
-  border-color: $brand-warning;
+//// Border animation
+//.live-input:after {
+//  content: '';
+//  display: block;
+//  height: .3px;
+//  width: 100%;
+//  background: transparent;
+//  -webkit-animation: pulse 1s ease infinite;
+//  color: blue;
+////  transition: height .5s ease, background-color .5s ease;
+//}
 
+@-webkit-keyframes pulse {
+  0% {
+    left: 0;
+    width: 0;
+    right: 0;
+  }
+
+  50% {
+    width: 50%;
+    left: 50%;
+    right: 0;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: 100%;
+  }
 }
+
+//.live-input:hover:after {
+//  height: 3px;
+//  background: blue;
+//}
+
+//.live-input.nothing:before {
+//  background-color: $brand-info;
+//}
+//
+//.live-input.error:before {
+//  background-color: $brand-danger;
+//}
+//
+//.live-input.voted:before {
+//  background-color: $brand-primary;
+//}
+//
+//.live-input.success:before {
+//  background-color: $brand-success;
+//
+//}
+//
+//.live-input.failure:before {
+//  background-color: $brand-warning;
+//}
