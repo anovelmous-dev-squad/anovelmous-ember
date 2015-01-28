@@ -15,5 +15,7 @@
     "qunit": "~1.15.0",
     "bootstrap": "~3.3.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "bootstrap-sass-official": "~3.3.3"
+  }
 }
